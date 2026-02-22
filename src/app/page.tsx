@@ -9,68 +9,76 @@ const INDEX_FILE = '00 - INDICE MAESTRO.md'
 
 const files = [
   { name: 'Indice Maestro', file: INDEX_FILE, category: 'Inicio' },
-  { name: 'MT 1 - Arquetipos de Audiencia', file: 'MT 1 - Arquetipos de Audiencia.md', category: 'MT' },
-  { name: 'MT 2 - Fundamentos de Marca', file: 'MT 2 - Fundamentos de Marca.md', category: 'MT' },
-  { name: 'MT 3 - The Feel Map', file: 'MT 3 - The Feel Map.md', category: 'MT' },
-  { name: 'MT 4 - Mapa Emocional de Deseos', file: 'MT 4 - Mapa Emocional de Deseos.md', category: 'MT' },
-  { name: 'MT 5 - Clasificación de Deseos', file: 'MT 5 - Clasificación de Deseos.md', category: 'MT' },
-  { name: 'MT 6 - Attitudinal Journey', file: 'MT 6 - Attitudinal Journey.md', category: 'MT' },
-  { name: 'MT 7 - The Brand Ego', file: 'MT 7 - The Brand Ego.md', category: 'MT' },
-  { name: 'MT 8 - MaxPyramid', file: 'MT 8 - MaxPyramid.md', category: 'MT' },
-  { name: 'MT 9 - The Brand Territory', file: 'MT 9 - The Brand Territory.md', category: 'MT' },
-  { name: 'MT 10 - ABC Roll Axis', file: 'MT 10 - ABC Roll Axis.md', category: 'MT' },
-  { name: 'MT 11 - Revolution Matrix', file: 'MT 11 - Revolution Matrix.md', category: 'MT' },
-  { name: 'MT 12 - The 5 Friends', file: 'MT 12 - The 5 Friends.md', category: 'MT' },
-  { name: 'MT 13 - Tools Driver', file: 'MT 13 - Tools Driver.md', category: 'MT' },
-  { name: 'MT 14 - ADN Tool', file: 'MT 14 - ADN Tool.md', category: 'MT' },
-  { name: 'MT 15 - Mensaje y Propósito', file: 'MT 15 - Mensaje y Propósito.md', category: 'MT' },
-  { name: 'MT 16 - Estructura Operativa', file: 'MT 16 - Estructura Operativa.md', category: 'MT' },
-  { name: 'MT 17 - Síntesis del Valor Central', file: 'MT 17 - Síntesis del Valor Central.md', category: 'MT' },
-  { name: 'MT 18 - Desarrollo Integral del Valor', file: 'MT 18 - Desarrollo Integral del Valor.md', category: 'MT' },
-  { name: 'MT 19 - Declaración de Posicionamiento', file: 'MT 19 - Declaración de Posicionamiento.md', category: 'MT' },
-  { name: 'MT 20 - Componentes del Modelo', file: 'MT 20 - Componentes del Modelo.md', category: 'MT' },
-  { name: 'MT 21 - Propósito Check', file: 'MT 21 - Propósito Check.md', category: 'MT' },
-  { name: 'MT 22 - Sistema de Valores', file: 'MT 22 - Sistema de Valores.md', category: 'MT' },
-  { name: 'MT 23 - Valores en Acción', file: 'MT 23 - Valores en Acción.md', category: 'MT' },
-  { name: 'MT 24 - Tools Drive 3', file: 'MT 24 - Tools Drive 3.md', category: 'MT' },
-  { name: 'MT 25 - Identidad y Activos de Marca', file: 'MT 25 - Identidad y Activos de Marca.md', category: 'MT' },
-  { name: 'MT 26 - The Brand Symbol', file: 'MT 26 - The Brand Symbol.md', category: 'MT' },
-  { name: 'MT 27 - Brand Charisma Archetypes', file: 'MT 27 - Brand Charisma Archetypes.md', category: 'MT' },
-  { name: 'MT 28 - Tone of Voice Path', file: 'MT 28 - Tone of Voice Path.md', category: 'MT' },
-  { name: 'MT 29 - Naming', file: 'MT 29 - Naming.md', category: 'MT' },
-  { name: 'MT 30 - Full Brand Board', file: 'MT 30 - Full Brand Board.md', category: 'MT' },
-  { name: 'MT 31 - The Sense Square', file: 'MT 31 - The Sense Square.md', category: 'MT' },
-  { name: 'MT 32 - Why We', file: 'MT 32 - Why We.md', category: 'MT' },
-  { name: 'MT 33 - Brand Narratives', file: 'MT 33 - Brand Narratives.md', category: 'MT' },
-  { name: 'MT 34 - Brand Rituals', file: 'MT 34 - Brand Rituals.md', category: 'MT' },
-  { name: 'MT 35 - The 10 Golden Moments', file: 'MT 35 - The 10 Golden Moments.md', category: 'MT' },
-  { name: 'MT 36 - The Burn Pyramid', file: 'MT 36 - The Burn Pyramid.md', category: 'MT' },
-  { name: 'MT 37 - Brand Power', file: 'MT 37 - Brand Power.md', category: 'MT' },
-  { name: 'MT 38 - Devotion Journey', file: 'MT 38 - Devotion Journey.md', category: 'MT' },
-  { name: 'MT 39 - Ejercicios Arquetipos', file: 'MT 39 - Ejercicios Arquetipos.md', category: 'MT' },
-  { name: 'MT 40 - Personificación de Marca', file: 'MT 40 - Personificación de Marca.md', category: 'MT' },
-  { name: 'SB 1 - Carta de Intencion', file: 'SB 1 - Carta de Intencion.md', category: 'SB' },
+  
+  { name: 'MT 1 - The Dog Matrix', file: 'MT 1 - The Dog Matrix.md', category: 'MT' },
+  { name: 'MT 1 - RESPUESTAS PLANTILLA', file: 'MT 1 - The Dog Matrix - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 2 - The Feel Map', file: 'MT 2 - The Feel Map.md', category: 'MT' },
+  { name: 'MT 3 - Brand Desire Canvas', file: 'MT 3 - Brand Desire Canvas.md', category: 'MT' },
+  { name: 'MT 3 - RESPUESTAS PLANTILLA', file: 'MT 3 - Brand Desire Canvas - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 4 - Attitudinal Journey', file: 'MT 4 - Attitudinal Journey.md', category: 'MT' },
+  { name: 'MT 5 - The Brand Ego', file: 'MT 5 - The Brand Ego.md', category: 'MT' },
+  { name: 'MT 6 - MaxPyramid', file: 'MT 6 - MaxPyramid.md', category: 'MT' },
+  { name: 'MT 7 - The Brand Territory', file: 'MT 7 - The Brand Territory.md', category: 'MT' },
+  { name: 'MT 8 - ABC Roll Axis', file: 'MT 8 - ABC Roll Axis.md', category: 'MT' },
+  { name: 'MT 9 - Revolution Matrix', file: 'MT 9 - Revolution Matrix.md', category: 'MT' },
+  { name: 'MT 10 - The 5 Friends', file: 'MT 10 - The 5 Friends.md', category: 'MT' },
+  { name: 'MT 11 - ADN Tool', file: 'MT 11 - ADN Tool.md', category: 'MT' },
+  { name: 'MT 12 - Los 5 qués - RESPUESTAS', file: 'MT 12 - Los 5 ques del branding - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 13 - The Core Value', file: 'MT 13 - The Core Value.md', category: 'MT' },
+  { name: 'MT 13 - RESPUESTAS PLANTILLA', file: 'MT 13 - The Core Value - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 14 - Brand Positioning Model', file: 'MT 14 - Brand Positioning Model.md', category: 'MT' },
+  { name: 'MT 14 - RESPUESTAS PLANTILLA', file: 'MT 14 - Brand Positioning Model - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 15 - Propósito Check', file: 'MT 15 - Propósito Check.md', category: 'MT' },
+  { name: 'MT 16 - Brand Values', file: 'MT 16 - Brand Values.md', category: 'MT' },
+  { name: 'MT 16 - RESPUESTAS PLANTILLA', file: 'MT 16 - Brand Values - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 17 - Identidad y Activos', file: 'MT 17 - Identidad y Activos de Marca.md', category: 'MT' },
+  { name: 'MT 18 - The Brand Symbol', file: 'MT 18 - The Brand Symbol.md', category: 'MT' },
+  { name: 'MT 19 - Brand Charisma Archetypes', file: 'MT 19 - Brand Charisma Archetypes.md', category: 'MT' },
+  { name: 'MT 20 - Tone of Voice Path', file: 'MT 20 - Tone of Voice Path.md', category: 'MT' },
+  { name: 'MT 21 - Naming', file: 'MT 21 - Naming.md', category: 'MT' },
+  { name: 'MT 22 - Full Brand Board', file: 'MT 22 - Full Brand Board.md', category: 'MT' },
+  { name: 'MT 23 - The Sense Square', file: 'MT 23 - The Sense Square.md', category: 'MT' },
+  { name: 'MT 24 - Why We', file: 'MT 24 - Why We.md', category: 'MT' },
+  { name: 'MT 25 - Brand Narratives', file: 'MT 25 - Brand Narratives.md', category: 'MT' },
+  { name: 'MT 26 - Brand Rituals', file: 'MT 26 - Brand Rituals.md', category: 'MT' },
+  { name: 'MT 27 - The 10 Golden Moments', file: 'MT 27 - The 10 Golden Moments.md', category: 'MT' },
+  { name: 'MT 28 - The Burn Pyramid', file: 'MT 28 - The Burn Pyramid.md', category: 'MT' },
+  { name: 'MT 29 - Brand Power', file: 'MT 29 - Brand Power.md', category: 'MT' },
+  { name: 'MT 30 - Devotion Journey', file: 'MT 30 - Devotion Journey.md', category: 'MT' },
+  { name: 'MT 31 - Ejercicios Arquetipos', file: 'MT 31 - Ejercicios Arquetipos.md', category: 'MT' },
+  { name: 'MT PERSONALIDAD - RESPUESTAS', file: 'MT PERSONALIDAD - Ejercicio Personificacion de Marca - RESPUESTAS.md', category: 'MT-Resp' },
+  
+  { name: 'SB 1 - Carta de Intención', file: 'SB 1 - Carta de Intencion.md', category: 'SB' },
   { name: 'SB 2 - Reconocimiento de Lote', file: 'SB 2 - Reconocimiento de Lote.md', category: 'SB' },
-  { name: 'SB 3 - Brujula Estrategica', file: 'SB 3 - Brujula Estrategica.md', category: 'SB' },
+  { name: 'SB 3 - Brújula Estratégica', file: 'SB 3 - Brujula Estrategica.md', category: 'SB' },
   { name: 'SB 4 - Lista Negra', file: 'SB 4 - Lista Negra de Perdidas Innegociables.md', category: 'SB' },
   { name: 'SB 5 - Mapa de Fugas', file: 'SB 5 - Mapa de Fugas.md', category: 'SB' },
   { name: 'SB 6 - Canvas', file: 'SB 6 - Canvas - A la gente como nosotros.md', category: 'SB' },
   { name: 'SB 7 - Dolor + Contenido', file: 'SB 7 - Dolor + Contenido.md', category: 'SB' },
   { name: 'SB 8 - Brand Building vs Sales', file: 'SB 8 - Brand Building vs Sales Activation.md', category: 'SB' },
   { name: 'SB 9 - El Rey', file: 'SB 9 - El Rey.md', category: 'SB' },
-  { name: 'VN 1 - Explora tu Marca', file: 'VN 1 - Explora tu Marca.md', category: 'VN' },
+  
+  { name: 'VN 1 - Explora tu Marca', file: 'VN 1 - Explora tu Marca Personal.md', category: 'VN' },
   { name: 'VN 2 - Diversifica Ideas', file: 'VN 2 - Diversifica tus Ideas y Explora tus Suenos.md', category: 'VN' },
   { name: 'VN 3 - Diversifica Objetivos', file: 'VN 3 - Diversifica Objetivos Visibilidad y Comunicacion.md', category: 'VN' },
   { name: 'VN 4 - Diversifica Ingresos', file: 'VN 4 - Diversifica Ingresos y Monetiza tu Talento.md', category: 'VN' },
   { name: 'VN 5 - Crea tu Plan', file: 'VN 5 - Crea tu Plan.md', category: 'VN' },
+  
+  { name: 'User Persona - CEO', file: 'User Personas/User Persona - CEO.md', category: 'UP' },
+  { name: 'User Persona - CFO', file: 'User Personas/User Persona - CFO.md', category: 'UP' },
+  { name: 'User Persona - CTO', file: 'User Personas/User Persona - CTO.md', category: 'UP' },
+  { name: 'User Persona - Dir. Operaciones', file: 'User Personas/User Persona - Director Operaciones.md', category: 'UP' },
+  { name: 'User Persona - Líder TD', file: 'User Personas/User Persona - Líder Transformación Digital.md', category: 'UP' },
 ]
 
 const getCategoryName = (cat: string) => {
   const categories: Record<string, string> = {
     'Inicio': 'Inicio',
     'MT': 'Marketing Templates',
+    'MT-Resp': 'Respuestas Plantillas',
     'SB': 'Strategic Blocks',
     'VN': 'Vision Notes',
+    'UP': 'User Personas',
   }
   return categories[cat] || cat
 }
@@ -133,8 +141,10 @@ export default function Home() {
   }
 
   const mtFiles = files.filter(f => f.category === 'MT')
+  const mtRespFiles = files.filter(f => f.category === 'MT-Resp')
   const sbFiles = files.filter(f => f.category === 'SB')
   const vnFiles = files.filter(f => f.category === 'VN')
+  const upFiles = files.filter(f => f.category === 'UP')
 
   return (
     <div className="flex h-screen">
@@ -191,6 +201,25 @@ export default function Home() {
           </div>
 
           <div className="mb-4">
+            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">MT - Respuestas</h3>
+            <nav className="space-y-1">
+              {mtRespFiles.map((item) => (
+                <button
+                  key={item.file}
+                  onClick={() => navigateTo(item.file)}
+                  className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
+                    selectedFile === item.file
+                      ? 'bg-blue-100 text-blue-700 font-medium'
+                      : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          <div className="mb-4">
             <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">SB - Strategic</h3>
             <nav className="space-y-1">
               {sbFiles.map((item) => (
@@ -213,6 +242,25 @@ export default function Home() {
             <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">VN - Vision</h3>
             <nav className="space-y-1">
               {vnFiles.map((item) => (
+                <button
+                  key={item.file}
+                  onClick={() => navigateTo(item.file)}
+                  className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
+                    selectedFile === item.file
+                      ? 'bg-blue-100 text-blue-700 font-medium'
+                      : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          <div className="mb-4">
+            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">User Personas</h3>
+            <nav className="space-y-1">
+              {upFiles.map((item) => (
                 <button
                   key={item.file}
                   onClick={() => navigateTo(item.file)}

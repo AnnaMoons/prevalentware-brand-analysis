@@ -1,6 +1,6 @@
 # MT 1 - THE DOG MATRIX - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: The Dog Matrix (What / Who / How / Why)
+## Plantilla: The Dog Matrix (What / Who / How / Why)
 
 ---
 

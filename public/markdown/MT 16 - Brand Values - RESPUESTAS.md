@@ -1,6 +1,6 @@
 # MT 16 - BRAND VALUES - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: Brand Values (Valores de Marca)
+## Plantilla: Brand Values (Valores de Marca)
 
 ---
 

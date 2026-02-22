@@ -1,4 +1,4 @@
-# MT 3 - BRAND DESIRE CANVAS - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 3 - BRAND DESIRE CANVAS - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## ¿PARA QUÉ SIRVE UN ZAPATO? - ANÁLISIS DE DESEOS
 
@@ -188,4 +188,4 @@ Ser reconocido externamente como pionero digital
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 3. Brand Desire Canvas
+**Basado en:** Plantilla MT 3. Brand Desire Canvas

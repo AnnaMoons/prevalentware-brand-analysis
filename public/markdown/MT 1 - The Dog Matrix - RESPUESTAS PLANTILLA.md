@@ -1,4 +1,4 @@
-# MT 1 - THE DOG MATRIX - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 1 - THE DOG MATRIX - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## ¿HABLAS O LADRAS?
 
@@ -174,4 +174,4 @@ Leads sin seguimiento, clientes pasados no contactados
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 1. The Dog Matrix
+**Basado en:** Plantilla MT 1. The Dog Matrix

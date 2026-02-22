@@ -17,24 +17,35 @@ export async function GET(request: NextRequest) {
   }
 
   const markdownDir = path.join(process.cwd(), 'public', 'markdown')
-  const files = fs.readdirSync(markdownDir)
   
-  const matchingFile = files.find(f => f === file || f.toLowerCase() === file.toLowerCase())
-
-  if (!matchingFile) {
-    return NextResponse.json({ error: 'File not found', requested: file }, { status: 404 })
-  }
-
-  const filePath = path.join(markdownDir, matchingFile)
+  // Check if file contains a subdirectory (e.g., "User Personas/file.md")
+  const filePath = path.join(markdownDir, file)
+  const dir = path.dirname(filePath)
+  const fileName = path.basename(filePath)
 
   try {
-    const content = fs.readFileSync(filePath, 'utf-8')
+    // Check if directory exists
+    if (!fs.existsSync(dir)) {
+      return NextResponse.json({ error: 'Directory not found', requested: file }, { status: 404 })
+    }
+
+    // Read directory and find matching file
+    const files = fs.readdirSync(dir)
+    const matchingFile = files.find(f => f === fileName || f.toLowerCase() === fileName.toLowerCase())
+
+    if (!matchingFile) {
+      return NextResponse.json({ error: 'File not found', requested: file }, { status: 404 })
+    }
+
+    const fullPath = path.join(dir, matchingFile)
+    const content = fs.readFileSync(fullPath, 'utf-8')
+    
     return new NextResponse(content, {
       headers: {
         'Content-Type': 'text/plain; charset=utf-8',
       },
     })
-  } catch {
-    return NextResponse.json({ error: 'File not found' }, { status: 404 })
+  } catch (error) {
+    return NextResponse.json({ error: 'Error reading file', requested: file }, { status: 500 })
   }
 }

@@ -11,8 +11,8 @@
 
 **Dolor 2: "No tenemos visibilidad de datos"**
 - Contenido: "Dashboards que todo CFO necesita"
-- Formato: Webinar + documento estratégico de marca
-- CTA: "Descarga documento estratégico de marca gratis"
+- Formato: Webinar + Template
+- CTA: "Descarga template gratis"
 
 **Dolor 3: "Sistemas que no se hablan"**
 - Contenido: "Guia de integracion de sistemas legacy"

@@ -1,4 +1,4 @@
-# MT 13 - THE CORE VALUE - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 13 - THE CORE VALUE - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## NUESTRO CAMINO Y NUESTRO DESTINO
 
@@ -134,4 +134,4 @@ Transformación.
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 13. The Core Value
+**Basado en:** Plantilla MT 13. The Core Value

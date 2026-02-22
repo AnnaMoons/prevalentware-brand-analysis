@@ -1,6 +1,6 @@
 # MT 13 - THE CORE VALUE - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: The Core Value (Valor Central)
+## Plantilla: The Core Value (Valor Central)
 
 ---
 

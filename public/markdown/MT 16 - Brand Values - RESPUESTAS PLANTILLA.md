@@ -1,4 +1,4 @@
-# MT 16 - BRAND VALUES - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 16 - BRAND VALUES - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## LAS COSAS NO SE DICEN, SE HACEN
 
@@ -217,4 +217,4 @@ Replantear la decisión.
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 16. Brand Values
+**Basado en:** Plantilla MT 16. Brand Values

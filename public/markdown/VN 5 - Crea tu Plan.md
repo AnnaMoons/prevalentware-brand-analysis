@@ -1,6 +1,6 @@
 # VN 5. Crea tu Plan - PrevalentWare
 
-## Plan de Marca
+## Plan de Marca Personal
 
 ### Plan de Acción 12 Meses:
 
@@ -53,5 +53,5 @@
 
 ---
 
-**Categoria:** Brand
+**Categoria:** Personal Brand
 **Fecha:** Febrero 2026

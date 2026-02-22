@@ -1,6 +1,6 @@
 # MT 12 - LOS 5 QUÉS DEL BRANDING - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: Los 5 Qués del Branding
+## Plantilla: Los 5 Qués del Branding
 
 ---
 

@@ -1,22 +1,22 @@
-# VN 1. Explora tu Marca - PrevalentWare
+# VN 1. Explora tu Marca Personal - PrevalentWare
 
-## Marca del Liderazgo
+## Marca Personal del Liderazgo
 
 ### Fundadores/Ejecutivos Clave:
 
-**CEO - Marca:**
+**CEO - Marca Personal:**
 - **Rol:** Visionario y embajador de cultura
 - **Expertise:** Estrategia, relaciones, innovacion
 - **Mensaje:** "Transformamos empresas latinoamericanas"
 - **Plataformas:** LinkedIn, eventos de industria, entrevistas
 
-**CTO - Marca:**
+**CTO - Marca Personal:**
 - **Rol:** Experto tecnico y referente
 - **Expertise:** Arquitectura, tecnologia emergente, mejores practicas
 - **Mensaje:** "Tecnologia aplicada con excelencia"
 - **Plataformas:** Github, blogs tecnicos, conferencias tech
 
-### Pilares de Marca:
+### Pilares de Marca Personal:
 
 **1. Autenticidad**
 - Ser genuino, no personaje
@@ -38,12 +38,12 @@
 - Participacion en medios
 - Networking activo
 
-### Estrategia de Marca:
+### Estrategia de Marca Personal:
 - 70% Valor profesional
 - 20% Cultura de empresa
 - 10% Personal/humano
 
 ---
 
-**Categoria:** Brand
+**Categoria:** Personal Brand
 **Fecha:** Febrero 2026

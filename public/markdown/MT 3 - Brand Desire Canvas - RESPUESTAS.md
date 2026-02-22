@@ -1,6 +1,6 @@
 # MT 3 - BRAND DESIRE CANVAS - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: Brand Desire Canvas (Deseos del Cliente)
+## Plantilla: Brand Desire Canvas (Deseos del Cliente)
 
 ---
 

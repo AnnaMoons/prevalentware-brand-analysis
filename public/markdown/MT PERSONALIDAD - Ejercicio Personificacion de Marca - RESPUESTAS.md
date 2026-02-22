@@ -1,6 +1,6 @@
 # MT PERSONALIDAD - EJERCICIO PERSONIFICACIÓN DE MARCA - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: Ejercicio de Personificación de Marca (28 Preguntas)
+## Plantilla: Ejercicio de Personificación de Marca (28 Preguntas)
 
 ---
 

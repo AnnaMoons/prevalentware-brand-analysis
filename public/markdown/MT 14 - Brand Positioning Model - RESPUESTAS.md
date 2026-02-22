@@ -1,6 +1,6 @@
 # MT 14 - BRAND POSITIONING MODEL - RESPUESTAS PREVALENTWARE
 
-## Documento Estratégico de Marca: Brand Positioning Model (Modelo de Posicionamiento)
+## Plantilla: Brand Positioning Model (Modelo de Posicionamiento)
 
 ---
 

@@ -1,4 +1,4 @@
-# MT 12 - LOS 5 QUÉ'S DEL BRANDING - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 12 - LOS 5 QUÉ'S DEL BRANDING - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## SI DEJASES DE EXISTIR, ¿TE ECHARÍAMOS DE MENOS?
 
@@ -205,4 +205,4 @@ Cambios que trascienden:
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 12. Los 5 qués del branding
+**Basado en:** Plantilla MT 12. Los 5 qués del branding

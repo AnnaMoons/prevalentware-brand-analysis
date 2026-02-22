@@ -32,7 +32,7 @@ Convertirnos en el partner de transformación digital de referencia para empresa
 
 ---
 
-## RESPUESTAS AL DOCUMENTO ESTRATÉGICO DE MARCA CARTA DE INTENCIÓN
+## RESPUESTAS A LA PLANTILLA CARTA DE INTENCIÓN
 
 ### Declaración de Intención
 

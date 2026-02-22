@@ -54,5 +54,5 @@
 
 ---
 
-**Categoria:** Brand
+**Categoria:** Personal Brand
 **Fecha:** Febrero 2026

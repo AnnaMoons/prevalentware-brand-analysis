@@ -374,7 +374,7 @@ Los 5 Friends de PrevalentWare forman un ecosistema interconectado donde cada un
 
 ---
 
-## RESPUESTAS AL DOCUMENTO ESTRATÉGICO DE MARCA THE 5 FRIENDS
+## RESPUESTAS A LA PLANTILLA THE 5 FRIENDS
 
 ### AMIGO #1: THE CUSTOMER (El Cliente)
 

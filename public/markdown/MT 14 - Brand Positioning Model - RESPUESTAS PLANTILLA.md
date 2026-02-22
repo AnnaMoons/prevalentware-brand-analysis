@@ -1,4 +1,4 @@
-# MT 14 - BRAND POSITIONING MODEL - RESPUESTAS DOCUMENTO ESTRATÉGICO DE MARCA PREVALENTWARE
+# MT 14 - BRAND POSITIONING MODEL - RESPUESTAS PLANTILLA PREVALENTWARE
 
 ## O TE POSICIONAS O TE POSICIONAN
 
@@ -170,4 +170,4 @@ Aportamos legado de transformación, reconocimiento profesional para líderes, y
 
 ---
 **Fecha:** Febrero 2026
-**Basado en:** documento estratégico de marca MT 14. Brand Positioning Model
+**Basado en:** Plantilla MT 14. Brand Positioning Model
