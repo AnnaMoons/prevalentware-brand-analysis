@@ -1,184 +1,220 @@
-# MT 16. Brand Values - PrevalentWare
+# MT 16 - BRAND VALUES - RESPUESTAS PLANTILLA PREVALENTWARE
 
-## Valores de Marca
+## LAS COSAS NO SE DICEN, SE HACEN
 
-### 1. PARTNERSHIP
-**Definición:** Relación de largo plazo basada en confianza mutua.
-**Comportamiento:**
-- Interés genuino en el éxito del cliente
-- Comunicación proactiva
-- Celebración de logros compartidos
+---
 
-### 2. EXCELENCIA
-**Definición:** Compromiso inquebrantable con la calidad.
-**Comportamiento:**
-- Estándares altos innegociables
+### IDENTIFICACIÓN DE VALORES
+
+**Valores Funcionales (Racionales, medibles, objetivos):**
+
+**1. Excelencia Técnica**
+- Código limpio y documentado
 - Testing exhaustivo
+- Entregas puntuales
 - Mejora continua
 
-### 3. INNOVACIÓN PRÁCTICA
-**Definición:** Adopción de tecnología enfocada en resultados.
-**Comportamiento:**
+**2. Innovación Práctica**
 - Tecnología de vanguardia aplicada
 - POCs antes de producción
-- Balance innovación-estabilidad
-
-### 4. EMPATÍA
-**Definición:** Entendimiento profundo del negocio del cliente.
-**Comportamiento:**
-- Escucha activa
-- Soluciones personalizadas
-- Cercanía humana
-
-### 5. RESULTADOS
-**Definición:** Orientación a impacto medible.
-**Comportamiento:**
-- KPIs claros en cada proyecto
-- Reportes de ROI
-- Responsabilidad por resultados
-
-### 6. INTEGRIDAD
-**Definición:** Honestidad y transparencia en todas las interacciones.
-**Comportamiento:**
-- Decimos "no" cuando no es nuestro expertise
-- Cronogramas realistas
-- Comunicación honesta sobre desafíos
-
----
-
-**Jerarquía:**
-1. Partnership (cómo nos relacionamos)
-2. Excelencia (cómo trabajamos)
-3. Resultados (qué entregamos)
-
----
-
-**Categoría:** Driver 1 - Construcción de Identidad
-**Fecha:** Febrero 2026
-
----
-
-## RESPUESTAS A LA Documento Estratégico de Marca BRAND VALUES
-
-### VALOR #1: PARTNERSHIP
-
-**Definición del valor:**
-Relación de largo plazo basada en confianza mutua, donde el éxito del cliente es nuestro éxito.
-
-**Comportamientos asociados:**
-- Interés genuino en el negocio del cliente
-- Proactividad en oportunidades
-- Comunicación constante
-- Celebración de logros compartidos
-
-**Ejemplos concretos:**
-- Llamadas de check-in sin agenda
-- Recomendaciones que beneficien al cliente aunque no generen venta
-- Soporte en momentos difíciles
-
----
-
-### VALOR #2: EXCELENCIA
-
-**Definición del valor:**
-Compromiso inquebrantable con la más alta calidad en todo lo que hacemos.
-
-**Comportamientos asociados:**
-- Testing exhaustivo antes de entregar
-- Código limpio y documentado
-- Atención al detalle
-- Mejora continua
-
-**Ejemplos concretos:**
-- Cero entregas sin QA
-- Documentación completa
-- Capacitación incluida obligatoriamente
-
----
-
-### VALOR #3: INNOVACIÓN PRÁCTICA
-
-**Definición del valor:**
-Adopción de tecnología de vanguardia enfocada exclusivamente en resultados de negocio.
-
-**Comportamientos asociados:**
-- POCs antes de producción
-- Equilibrio innovación-estabilidad
-- Mejora continua
+- Adopción temprana validada
 - Aprendizaje constante
 
-**Ejemplos concretos:**
-- Laboratorio de I+D
-- Partnerships con tecnológicas líderes
-- Capacitación continua del equipo
+**3. Eficiencia**
+- Metodologías ágiles
+- Procesos optimizados
+- Resultados rápidos
+- Sin burocracia
 
----
+**Valores Emocionales (Sentimientos, cualitativos, subjetivos):**
 
-### VALOR #4: EMPATÍA
+**4. Partnership (Cercanía)**
+- Interés genuino en el cliente
+- Comunicación proactiva
+- Celebración de logros
+- Largo plazo sobre transacción
 
-**Definición del valor:**
-Entendimiento profundo del negocio del cliente antes de proponer soluciones.
-
-**Comportamientos asociados:**
+**5. Empatía**
 - Escucha activa
+- Entendimiento del negocio
 - Flexibilidad
-- Cercanía humana
-- Trato personalizado
+- Trato humano
 
-**Ejemplos concretos:**
-- WhatsApp para urgencias
-- Check-ins informales
-- Conocimiento de contexto del cliente
-
----
-
-### VALOR #5: RESULTADOS
-
-**Definición del valor:**
-Orientación absoluta a impacto medible y ROI positivo.
-
-**Comportamientos asociados:**
-- KPIs claros en cada proyecto
-- Reportes de impacto
-- Responsabilidad por resultados
-- Promesas realistas
-
-**Ejemplos concretos:**
-- Métricas de éxito definidas en contrato
-- Reportes post-implementación
-- Seguimiento de ROI a 6 y 12 meses
+**6. Integridad**
+- Honestidad siempre
+- Decir "no" cuando corresponde
+- Cumplir promesas
+- Transparencia total
 
 ---
 
-### VALOR #6: INTEGRIDAD
+### VALUE MAP - MAPA DE VALORES
 
-**Definición del valor:**
-Honestidad y transparencia en todas las interacciones.
+#### DIMENSIÓN 1: Desde un punto de vista social
+**¿Qué puede esperar la sociedad de ti?**
 
-**Comportamientos asociados:**
-- Decir "no" cuando no es nuestro expertise
-- Cronogramas realistas
-- Comunicación honesta sobre problemas
-- Decisiones basadas en valores
+**Respuesta:**
+Que contribuyamos al desarrollo empresarial de Latinoamérica mediante tecnología accesible y resultados tangibles.
 
-**Ejemplos concretos:**
-- No prometer lo inalcanzable
-- Comunicación proactiva de retrasos
-- Recomendar lo mejor para cliente, no lo más caro
+**Valor:** **Impacto Social Positivo**
+- Creemos empresas más competitivas
+- Generamos empleos de calidad
+- Democratizamos tecnología
+- Elevamos estándares de industria
 
 ---
 
-### JERARQUÍA DE VALORES
+#### DIMENSIÓN 2: Desde un punto de vista del cliente
+**¿Qué pueden esperar tus clientes de ti?**
 
-**Valores de Orden (No negociables):**
-1. Integridad
-2. Excelencia
-3. Partnership
+**Respuesta:**
+Que seamos un partner comprometido que garantice resultados y esté ahí en cada paso del camino.
 
-**Valores de Progreso (Diferenciadores):**
-4. Innovación Práctica
-5. Resultados
-6. Empatía
+**Valor:** **Compromiso Total**
+- No los dejamos solos
+- Garantizamos ROI
+- Soporte continuo
+- Relación a largo plazo
 
-**Pregunta de filtro:**
-"¿Esta decisión respeta nuestros valores de Integridad, Excelencia y Partnership?"
+---
+
+#### DIMENSIÓN 3: Desde un punto de vista interno (equipo)
+**¿Qué pueden esperar los empleados de ti?**
+
+**Respuesta:**
+Un ambiente de crecimiento profesional, excelencia técnica y propósito claro.
+
+**Valor:** **Desarrollo y Propósito**
+- Capacitación continua
+- Proyectos desafiantes
+- Cultura de excelencia
+- Trabajo con impacto real
+
+---
+
+#### DIMENSIÓN 4: Desde un punto de vista de la marca
+**¿Qué puedes esperar tú de tu marca?**
+
+**Respuesta:**
+Que seamos referentes en transformación digital, reconocidos por resultados y partnership real.
+
+**Valor:** **Liderazgo y Legado**
+- Ser referentes regionales
+- Innovación constante
+- Relaciones duraderas
+- Impacto medible
+
+---
+
+### VALORES ACTIVOS DE PREVALENTWARE
+
+No solo son palabras, son acciones:
+
+**EXCELENCIA TÉCNICA**
+❌ No es: "Hacemos código"
+✅ Sí es: "Entregamos código probado, documentado y escalable"
+
+**INNOVACIÓN PRÁCTICA**
+❌ No es: "Usamos lo último"
+✅ Sí es: "Adoptamos tecnología que realmente transforma negocios"
+
+**PARTNERSHIP**
+❌ No es: "Vendemos y entregamos"
+✅ Sí es: "Acompañamos y celebramos tu éxito como propio"
+
+**EMPATÍA**
+❌ No es: "Escuchamos"
+✅ Sí es: "Entendemos tu negocio antes de proponer soluciones"
+
+**INTEGRIDAD**
+❌ No es: "Somos honestos"
+✅ Sí es: "Decimos 'no' cuando no es lo mejor para ti"
+
+---
+
+### MANIFIESTO DE VALORES
+
+**"En PrevalentWare no predicamos valores, los vivimos.**
+
+**EXCELENCIA TÉCNICA** se demuestra en cada línea de código probada.
+**INNOVACIÓN PRÁCTICA** se ve en cada tecnología que realmente aporta valor.
+**PARTNERSHIP** se siente en cada llamada de check-in sin agenda comercial.
+**EMPATÍA** se nota cuando entendemos tu negocio mejor que tú.
+**INTEGRIDAD** se prueba cuando decimos "no" a proyectos que no encajan.
+
+**Nuestros valores no están en la pared, están en cada decisión que tomamos.**
+
+**Si no lo vivimos, no lo predicamos.**
+
+**Estos somos. Esto hacemos. Así transformamos."**
+
+---
+
+### APLICACIÓN DE VALORES
+
+**En la contratación:**
+- ¿Comparte nuestros valores?
+- ¿Ha demostrado excelencia?
+- ¿Entiende partnership?
+
+**En la venta:**
+- ¿Es un cliente con quien podemos tener partnership?
+- ¿Podemos garantizar resultados con integridad?
+- ¿Podemos ser empáticos con su situación?
+
+**En la entrega:**
+- ¿Cumplimos con excelencia técnica?
+- ¿Innovamos prácticamente?
+- ¿Mantenemos el partnership?
+
+**En el servicio:**
+- ¿Empatizamos con sus desafíos?
+- ¿Actuamos con integridad?
+- ¿Mantenemos la excelencia?
+
+---
+
+### LOS 6 VALORES DE PREVALENTWARE
+
+```
+┌────────────────────────────────────────────┐
+│           BRAND VALUES                     │
+│              PREVALENTWARE                 │
+├────────────────────────────────────────────┤
+│                                            │
+│  FUNCIONALES:                              │
+│  • Excelencia Técnica                      │
+│  • Innovación Práctica                     │
+│  • Eficiencia                              │
+│                                            │
+│  EMOCIONALES:                              │
+│  • Partnership (Cercanía)                  │
+│  • Empatía                                 │
+│  • Integridad                              │
+│                                            │
+│  "No se dicen, se hacen"                   │
+│                                            │
+└────────────────────────────────────────────┘
+```
+
+---
+
+### FILTRO DE VALORES
+
+**Antes de cualquier decisión importante:**
+
+**¿Esta decisión respeta nuestros valores?**
+
+- [ ] ¿Demuestra **Excelencia Técnica**?
+- [ ] ¿Representa **Innovación Práctica**?
+- [ ] ¿Mantiene **Eficiencia**?
+- [ ] ¿Refuerza **Partnership**?
+- [ ] ¿Muestra **Empatía**?
+- [ ] ¿Actúa con **Integridad**?
+
+**Si la respuesta es NO a alguno:**
+Replantear la decisión.
+
+---
+**Fecha:** Febrero 2026
+**Basado en:** Plantilla MT 16. Brand Values
