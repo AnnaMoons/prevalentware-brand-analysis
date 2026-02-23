@@ -306,7 +306,7 @@ El ego de PrevalentWare está construido sobre la base de **expertise probado**,
 
 ---
 
-## RESPUESTAS A LA PLANTILLA THE BRAND EGO
+## RESPUESTAS A LA Documento Estratégico de Marca THE BRAND EGO
 
 ### SECCIÓN 1: AUTOCONCEPTO
 

@@ -384,7 +384,7 @@ Los deseos de los clientes de PrevalentWare van más allá de la simple automati
 
 ---
 
-## RESPUESTAS A LA PLANTILLA BRAND DESIRE CANVAS
+## RESPUESTAS A LA Documento Estratégico de Marca BRAND DESIRE CANVAS
 
 ### SECCIÓN 1: DESEOS FUNCIONALES
 

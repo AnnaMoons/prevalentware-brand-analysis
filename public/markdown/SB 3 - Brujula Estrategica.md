@@ -32,7 +32,7 @@ Resultados garantizados
 
 ---
 
-## RESPUESTAS A LA PLANTILLA BRÚJULA ESTRATÉGICA
+## RESPUESTAS A LA Documento Estratégico de Marca BRÚJULA ESTRATÉGICA
 
 ### NORTE: Propósito y Dirección
 

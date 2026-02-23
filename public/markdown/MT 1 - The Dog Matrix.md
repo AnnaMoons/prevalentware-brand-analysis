@@ -142,7 +142,7 @@ La matriz muestra un negocio sólido donde el WHAT (servicios) está perfectamen
 
 ---
 
-## RESPUESTAS A LA PLANTILLA THE DOG MATRIX
+## RESPUESTAS A LA Documento Estratégico de Marca THE DOG MATRIX
 
 ### Sección 1: WHAT (¿Qué ofrecemos?)
 

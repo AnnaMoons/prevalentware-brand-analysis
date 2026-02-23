@@ -11,10 +11,8 @@ const files = [
   { name: 'Indice Maestro', file: INDEX_FILE, category: 'Inicio' },
   
   { name: 'MT 1 - The Dog Matrix', file: 'MT 1 - The Dog Matrix.md', category: 'MT' },
-  { name: 'MT 1 - RESPUESTAS PLANTILLA', file: 'MT 1 - The Dog Matrix - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
   { name: 'MT 2 - The Feel Map', file: 'MT 2 - The Feel Map.md', category: 'MT' },
   { name: 'MT 3 - Brand Desire Canvas', file: 'MT 3 - Brand Desire Canvas.md', category: 'MT' },
-  { name: 'MT 3 - RESPUESTAS PLANTILLA', file: 'MT 3 - Brand Desire Canvas - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
   { name: 'MT 4 - Attitudinal Journey', file: 'MT 4 - Attitudinal Journey.md', category: 'MT' },
   { name: 'MT 5 - The Brand Ego', file: 'MT 5 - The Brand Ego.md', category: 'MT' },
   { name: 'MT 6 - MaxPyramid', file: 'MT 6 - MaxPyramid.md', category: 'MT' },
@@ -23,14 +21,11 @@ const files = [
   { name: 'MT 9 - Revolution Matrix', file: 'MT 9 - Revolution Matrix.md', category: 'MT' },
   { name: 'MT 10 - The 5 Friends', file: 'MT 10 - The 5 Friends.md', category: 'MT' },
   { name: 'MT 11 - ADN Tool', file: 'MT 11 - ADN Tool.md', category: 'MT' },
-  { name: 'MT 12 - Los 5 qués - RESPUESTAS', file: 'MT 12 - Los 5 ques del branding - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
+  { name: 'MT 12 - Los 5 qués del branding', file: 'MT 12 - Los 5 ques del branding.md', category: 'MT' },
   { name: 'MT 13 - The Core Value', file: 'MT 13 - The Core Value.md', category: 'MT' },
-  { name: 'MT 13 - RESPUESTAS PLANTILLA', file: 'MT 13 - The Core Value - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
   { name: 'MT 14 - Brand Positioning Model', file: 'MT 14 - Brand Positioning Model.md', category: 'MT' },
-  { name: 'MT 14 - RESPUESTAS PLANTILLA', file: 'MT 14 - Brand Positioning Model - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
   { name: 'MT 15 - Propósito Check', file: 'MT 15 - Propósito Check.md', category: 'MT' },
   { name: 'MT 16 - Brand Values', file: 'MT 16 - Brand Values.md', category: 'MT' },
-  { name: 'MT 16 - RESPUESTAS PLANTILLA', file: 'MT 16 - Brand Values - RESPUESTAS PLANTILLA.md', category: 'MT-Resp' },
   { name: 'MT 17 - Identidad y Activos', file: 'MT 17 - Identidad y Activos de Marca.md', category: 'MT' },
   { name: 'MT 18 - The Brand Symbol', file: 'MT 18 - The Brand Symbol.md', category: 'MT' },
   { name: 'MT 19 - Brand Charisma Archetypes', file: 'MT 19 - Brand Charisma Archetypes.md', category: 'MT' },
@@ -46,7 +41,6 @@ const files = [
   { name: 'MT 29 - Brand Power', file: 'MT 29 - Brand Power.md', category: 'MT' },
   { name: 'MT 30 - Devotion Journey', file: 'MT 30 - Devotion Journey.md', category: 'MT' },
   { name: 'MT 31 - Ejercicios Arquetipos', file: 'MT 31 - Ejercicios Arquetipos.md', category: 'MT' },
-  { name: 'MT PERSONALIDAD - RESPUESTAS', file: 'MT PERSONALIDAD - Ejercicio Personificacion de Marca - RESPUESTAS.md', category: 'MT-Resp' },
   
   { name: 'SB 1 - Carta de Intención', file: 'SB 1 - Carta de Intencion.md', category: 'SB' },
   { name: 'SB 2 - Reconocimiento de Lote', file: 'SB 2 - Reconocimiento de Lote.md', category: 'SB' },
@@ -75,7 +69,6 @@ const getCategoryName = (cat: string) => {
   const categories: Record<string, string> = {
     'Inicio': 'Inicio',
     'MT': 'Marketing Templates',
-    'MT-Resp': 'Respuestas Plantillas',
     'SB': 'Strategic Blocks',
     'VN': 'Vision Notes',
     'UP': 'User Personas',
@@ -141,7 +134,6 @@ export default function Home() {
   }
 
   const mtFiles = files.filter(f => f.category === 'MT')
-  const mtRespFiles = files.filter(f => f.category === 'MT-Resp')
   const sbFiles = files.filter(f => f.category === 'SB')
   const vnFiles = files.filter(f => f.category === 'VN')
   const upFiles = files.filter(f => f.category === 'UP')
@@ -185,25 +177,6 @@ export default function Home() {
             <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">MT - Marketing</h3>
             <nav className="space-y-1">
               {mtFiles.map((item) => (
-                <button
-                  key={item.file}
-                  onClick={() => navigateTo(item.file)}
-                  className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                    selectedFile === item.file
-                      ? 'bg-blue-100 text-blue-700 font-medium'
-                      : 'text-gray-700 hover:bg-gray-100'
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ))}
-            </nav>
-          </div>
-
-          <div className="mb-4">
-            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">MT - Respuestas</h3>
-            <nav className="space-y-1">
-              {mtRespFiles.map((item) => (
                 <button
                   key={item.file}
                   onClick={() => navigateTo(item.file)}
