@@ -41,6 +41,7 @@ const files = [
   { name: 'MT 29 - Brand Power', file: 'MT 29 - Brand Power.md', category: 'MT' },
   { name: 'MT 30 - Devotion Journey', file: 'MT 30 - Devotion Journey.md', category: 'MT' },
   { name: 'MT 31 - Ejercicios Arquetipos', file: 'MT 31 - Ejercicios Arquetipos.md', category: 'MT' },
+  { name: 'MT PERSONALIDAD - Ejercicio Personificación', file: 'MT PERSONALIDAD - Ejercicio Personificacion de Marca - RESPUESTAS.md', category: 'MT' },
   
   { name: 'SB 1 - Carta de Intención', file: 'SB 1 - Carta de Intencion.md', category: 'SB' },
   { name: 'SB 2 - Reconocimiento de Lote', file: 'SB 2 - Reconocimiento de Lote.md', category: 'SB' },
