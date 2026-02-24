@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
-import { useSearchParams, useRouter, usePathname } from 'next/navigation'
+import { useState, useEffect, useMemo, Suspense } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
@@ -78,10 +78,9 @@ const getCategoryName = (cat: string) => {
   return categories[cat] || cat
 }
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
-  const pathname = usePathname()
   
   const [content, setContent] = useState<string>('')
   const [loading, setLoading] = useState(false)
@@ -362,5 +361,21 @@ export default function Home() {
         )}
       </main>
     </div>
+  )
+}
+
+function Loading() {
+  return (
+    <div className="flex h-screen items-center justify-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+    </div>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <HomeContent />
+    </Suspense>
   )
 }
