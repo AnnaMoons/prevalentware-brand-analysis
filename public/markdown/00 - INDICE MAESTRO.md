@@ -132,7 +132,7 @@ Partnership real (no proveedor transaccional) + Expertise probado (+350 proyecto
 
 ---
 
-**Documento creado por:** Asistente de Branding IA
+**Documento creado por:** MargaritIA
 **Fecha:** Febrero 2026
-**Versión:** 3.0 (Organizado)
+**Versión:** 1
 **Última actualización:** Febrero 2026
