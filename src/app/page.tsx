@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
@@ -8,62 +9,62 @@ import rehypeRaw from 'rehype-raw'
 const INDEX_FILE = '00 - INDICE MAESTRO.md'
 
 const files = [
-  { name: 'Indice Maestro', file: INDEX_FILE, category: 'Inicio' },
+  { name: 'Indice Maestro', file: INDEX_FILE, category: 'Inicio', slug: 'indice' },
   
-  { name: 'MT 1 - The Dog Matrix', file: 'MT 1 - The Dog Matrix.md', category: 'MT' },
-  { name: 'MT 2 - The Feel Map', file: 'MT 2 - The Feel Map.md', category: 'MT' },
-  { name: 'MT 3 - Brand Desire Canvas', file: 'MT 3 - Brand Desire Canvas.md', category: 'MT' },
-  { name: 'MT 4 - Attitudinal Journey', file: 'MT 4 - Attitudinal Journey.md', category: 'MT' },
-  { name: 'MT 5 - The Brand Ego', file: 'MT 5 - The Brand Ego.md', category: 'MT' },
-  { name: 'MT 6 - MaxPyramid', file: 'MT 6 - MaxPyramid.md', category: 'MT' },
-  { name: 'MT 7 - The Brand Territory', file: 'MT 7 - The Brand Territory.md', category: 'MT' },
-  { name: 'MT 8 - ABC Roll Axis', file: 'MT 8 - ABC Roll Axis.md', category: 'MT' },
-  { name: 'MT 9 - Revolution Matrix', file: 'MT 9 - Revolution Matrix.md', category: 'MT' },
-  { name: 'MT 10 - The 5 Friends', file: 'MT 10 - The 5 Friends.md', category: 'MT' },
-  { name: 'MT 11 - ADN Tool', file: 'MT 11 - ADN Tool.md', category: 'MT' },
-  { name: 'MT 12 - Los 5 qués del branding', file: 'MT 12 - Los 5 ques del branding.md', category: 'MT' },
-  { name: 'MT 13 - The Core Value', file: 'MT 13 - The Core Value.md', category: 'MT' },
-  { name: 'MT 14 - Brand Positioning Model', file: 'MT 14 - Brand Positioning Model.md', category: 'MT' },
-  { name: 'MT 15 - Propósito Check', file: 'MT 15 - Propósito Check.md', category: 'MT' },
-  { name: 'MT 16 - Brand Values', file: 'MT 16 - Brand Values.md', category: 'MT' },
-  { name: 'MT 17 - Identidad y Activos', file: 'MT 17 - Identidad y Activos de Marca.md', category: 'MT' },
-  { name: 'MT 18 - The Brand Symbol', file: 'MT 18 - The Brand Symbol.md', category: 'MT' },
-  { name: 'MT 19 - Brand Charisma Archetypes', file: 'MT 19 - Brand Charisma Archetypes.md', category: 'MT' },
-  { name: 'MT 20 - Tone of Voice Path', file: 'MT 20 - Tone of Voice Path.md', category: 'MT' },
-  { name: 'MT 21 - Naming', file: 'MT 21 - Naming.md', category: 'MT' },
-  { name: 'MT 22 - Full Brand Board', file: 'MT 22 - Full Brand Board.md', category: 'MT' },
-  { name: 'MT 23 - The Sense Square', file: 'MT 23 - The Sense Square.md', category: 'MT' },
-  { name: 'MT 24 - Why We', file: 'MT 24 - Why We.md', category: 'MT' },
-  { name: 'MT 25 - Brand Narratives', file: 'MT 25 - Brand Narratives.md', category: 'MT' },
-  { name: 'MT 26 - Brand Rituals', file: 'MT 26 - Brand Rituals.md', category: 'MT' },
-  { name: 'MT 27 - The 10 Golden Moments', file: 'MT 27 - The 10 Golden Moments.md', category: 'MT' },
-  { name: 'MT 28 - The Burn Pyramid', file: 'MT 28 - The Burn Pyramid.md', category: 'MT' },
-  { name: 'MT 29 - Brand Power', file: 'MT 29 - Brand Power.md', category: 'MT' },
-  { name: 'MT 30 - Devotion Journey', file: 'MT 30 - Devotion Journey.md', category: 'MT' },
-  { name: 'MT 31 - Ejercicios Arquetipos', file: 'MT 31 - Ejercicios Arquetipos.md', category: 'MT' },
-  { name: 'MT PERSONALIDAD - Ejercicio Personificación', file: 'MT PERSONALIDAD - Ejercicio Personificacion de Marca - RESPUESTAS.md', category: 'MT' },
+  { name: 'MT 1 - The Dog Matrix', file: 'MT 1 - The Dog Matrix.md', category: 'MT', slug: 'mt-1-dog-matrix' },
+  { name: 'MT 2 - The Feel Map', file: 'MT 2 - The Feel Map.md', category: 'MT', slug: 'mt-2-feel-map' },
+  { name: 'MT 3 - Brand Desire Canvas', file: 'MT 3 - Brand Desire Canvas.md', category: 'MT', slug: 'mt-3-brand-desire-canvas' },
+  { name: 'MT 4 - Attitudinal Journey', file: 'MT 4 - Attitudinal Journey.md', category: 'MT', slug: 'mt-4-attitudinal-journey' },
+  { name: 'MT 5 - The Brand Ego', file: 'MT 5 - The Brand Ego.md', category: 'MT', slug: 'mt-5-brand-ego' },
+  { name: 'MT 6 - MaxPyramid', file: 'MT 6 - MaxPyramid.md', category: 'MT', slug: 'mt-6-maxpyramid' },
+  { name: 'MT 7 - The Brand Territory', file: 'MT 7 - The Brand Territory.md', category: 'MT', slug: 'mt-7-brand-territory' },
+  { name: 'MT 8 - ABC Roll Axis', file: 'MT 8 - ABC Roll Axis.md', category: 'MT', slug: 'mt-8-abc-roll-axis' },
+  { name: 'MT 9 - Revolution Matrix', file: 'MT 9 - Revolution Matrix.md', category: 'MT', slug: 'mt-9-revolution-matrix' },
+  { name: 'MT 10 - The 5 Friends', file: 'MT 10 - The 5 Friends.md', category: 'MT', slug: 'mt-10-5-friends' },
+  { name: 'MT 11 - ADN Tool', file: 'MT 11 - ADN Tool.md', category: 'MT', slug: 'mt-11-adn-tool' },
+  { name: 'MT 12 - Los 5 qués del branding', file: 'MT 12 - Los 5 ques del branding.md', category: 'MT', slug: 'mt-12-5-ques' },
+  { name: 'MT 13 - The Core Value', file: 'MT 13 - The Core Value.md', category: 'MT', slug: 'mt-13-core-value' },
+  { name: 'MT 14 - Brand Positioning Model', file: 'MT 14 - Brand Positioning Model.md', category: 'MT', slug: 'mt-14-brand-positioning' },
+  { name: 'MT 15 - Propósito Check', file: 'MT 15 - Propósito Check.md', category: 'MT', slug: 'mt-15-proposito-check' },
+  { name: 'MT 16 - Brand Values', file: 'MT 16 - Brand Values.md', category: 'MT', slug: 'mt-16-brand-values' },
+  { name: 'MT 17 - Identidad y Activos', file: 'MT 17 - Identidad y Activos de Marca.md', category: 'MT', slug: 'mt-17-identidad-activos' },
+  { name: 'MT 18 - The Brand Symbol', file: 'MT 18 - The Brand Symbol.md', category: 'MT', slug: 'mt-18-brand-symbol' },
+  { name: 'MT 19 - Brand Charisma Archetypes', file: 'MT 19 - Brand Charisma Archetypes.md', category: 'MT', slug: 'mt-19-charisma-archetypes' },
+  { name: 'MT 20 - Tone of Voice Path', file: 'MT 20 - Tone of Voice Path.md', category: 'MT', slug: 'mt-20-tone-of-voice' },
+  { name: 'MT 21 - Naming', file: 'MT 21 - Naming.md', category: 'MT', slug: 'mt-21-naming' },
+  { name: 'MT 22 - Full Brand Board', file: 'MT 22 - Full Brand Board.md', category: 'MT', slug: 'mt-22-full-brand-board' },
+  { name: 'MT 23 - The Sense Square', file: 'MT 23 - The Sense Square.md', category: 'MT', slug: 'mt-23-sense-square' },
+  { name: 'MT 24 - Why We', file: 'MT 24 - Why We.md', category: 'MT', slug: 'mt-24-why-we' },
+  { name: 'MT 25 - Brand Narratives', file: 'MT 25 - Brand Narratives.md', category: 'MT', slug: 'mt-25-brand-narratives' },
+  { name: 'MT 26 - Brand Rituals', file: 'MT 26 - Brand Rituals.md', category: 'MT', slug: 'mt-26-brand-rituals' },
+  { name: 'MT 27 - The 10 Golden Moments', file: 'MT 27 - The 10 Golden Moments.md', category: 'MT', slug: 'mt-27-golden-moments' },
+  { name: 'MT 28 - The Burn Pyramid', file: 'MT 28 - The Burn Pyramid.md', category: 'MT', slug: 'mt-28-burn-pyramid' },
+  { name: 'MT 29 - Brand Power', file: 'MT 29 - Brand Power.md', category: 'MT', slug: 'mt-29-brand-power' },
+  { name: 'MT 30 - Devotion Journey', file: 'MT 30 - Devotion Journey.md', category: 'MT', slug: 'mt-30-devotion-journey' },
+  { name: 'MT 31 - Ejercicios Arquetipos', file: 'MT 31 - Ejercicios Arquetipos.md', category: 'MT', slug: 'mt-31-ejercicios-arquetipos' },
+  { name: 'MT PERSONALIDAD - Ejercicio Personificación', file: 'MT PERSONALIDAD - Ejercicio Personificacion de Marca - RESPUESTAS.md', category: 'MT', slug: 'mt-personalidad' },
   
-  { name: 'SB 1 - Carta de Intención', file: 'SB 1 - Carta de Intencion.md', category: 'SB' },
-  { name: 'SB 2 - Reconocimiento de Lote', file: 'SB 2 - Reconocimiento de Lote.md', category: 'SB' },
-  { name: 'SB 3 - Brújula Estratégica', file: 'SB 3 - Brujula Estrategica.md', category: 'SB' },
-  { name: 'SB 4 - Lista Negra', file: 'SB 4 - Lista Negra de Perdidas Innegociables.md', category: 'SB' },
-  { name: 'SB 5 - Mapa de Fugas', file: 'SB 5 - Mapa de Fugas.md', category: 'SB' },
-  { name: 'SB 6 - Canvas', file: 'SB 6 - Canvas - A la gente como nosotros.md', category: 'SB' },
-  { name: 'SB 7 - Dolor + Contenido', file: 'SB 7 - Dolor + Contenido.md', category: 'SB' },
-  { name: 'SB 8 - Brand Building vs Sales', file: 'SB 8 - Brand Building vs Sales Activation.md', category: 'SB' },
-  { name: 'SB 9 - El Rey', file: 'SB 9 - El Rey.md', category: 'SB' },
+  { name: 'SB 1 - Carta de Intención', file: 'SB 1 - Carta de Intencion.md', category: 'SB', slug: 'sb-1-carta-intencion' },
+  { name: 'SB 2 - Reconocimiento de Lote', file: 'SB 2 - Reconocimiento de Lote.md', category: 'SB', slug: 'sb-2-reconocimiento-lote' },
+  { name: 'SB 3 - Brújula Estratégica', file: 'SB 3 - Brujula Estrategica.md', category: 'SB', slug: 'sb-3-brujula-estrategica' },
+  { name: 'SB 4 - Lista Negra', file: 'SB 4 - Lista Negra de Perdidas Innegociables.md', category: 'SB', slug: 'sb-4-lista-negra' },
+  { name: 'SB 5 - Mapa de Fugas', file: 'SB 5 - Mapa de Fugas.md', category: 'SB', slug: 'sb-5-mapa-fugas' },
+  { name: 'SB 6 - Canvas', file: 'SB 6 - Canvas - A la gente como nosotros.md', category: 'SB', slug: 'sb-6-canvas' },
+  { name: 'SB 7 - Dolor + Contenido', file: 'SB 7 - Dolor + Contenido.md', category: 'SB', slug: 'sb-7-dolor-contenido' },
+  { name: 'SB 8 - Brand Building vs Sales', file: 'SB 8 - Brand Building vs Sales Activation.md', category: 'SB', slug: 'sb-8-brand-building' },
+  { name: 'SB 9 - El Rey', file: 'SB 9 - El Rey.md', category: 'SB', slug: 'sb-9-el-rey' },
   
-  { name: 'VN 1 - Explora tu Marca', file: 'VN 1 - Explora tu Marca Personal.md', category: 'VN' },
-  { name: 'VN 2 - Diversifica Ideas', file: 'VN 2 - Diversifica tus Ideas y Explora tus Suenos.md', category: 'VN' },
-  { name: 'VN 3 - Diversifica Objetivos', file: 'VN 3 - Diversifica Objetivos Visibilidad y Comunicacion.md', category: 'VN' },
-  { name: 'VN 4 - Diversifica Ingresos', file: 'VN 4 - Diversifica Ingresos y Monetiza tu Talento.md', category: 'VN' },
-  { name: 'VN 5 - Crea tu Plan', file: 'VN 5 - Crea tu Plan.md', category: 'VN' },
+  { name: 'VN 1 - Explora tu Marca', file: 'VN 1 - Explora tu Marca Personal.md', category: 'VN', slug: 'vn-1-explora-marca' },
+  { name: 'VN 2 - Diversifica Ideas', file: 'VN 2 - Diversifica tus Ideas y Explora tus Suenos.md', category: 'VN', slug: 'vn-2-diversifica-ideas' },
+  { name: 'VN 3 - Diversifica Objetivos', file: 'VN 3 - Diversifica Objetivos Visibilidad y Comunicacion.md', category: 'VN', slug: 'vn-3-diversifica-objetivos' },
+  { name: 'VN 4 - Diversifica Ingresos', file: 'VN 4 - Diversifica Ingresos y Monetiza tu Talento.md', category: 'VN', slug: 'vn-4-diversifica-ingresos' },
+  { name: 'VN 5 - Crea tu Plan', file: 'VN 5 - Crea tu Plan.md', category: 'VN', slug: 'vn-5-crea-plan' },
   
-  { name: 'User Persona - CEO', file: 'User Personas/User Persona - CEO.md', category: 'UP' },
-  { name: 'User Persona - CFO', file: 'User Personas/User Persona - CFO.md', category: 'UP' },
-  { name: 'User Persona - CTO', file: 'User Personas/User Persona - CTO.md', category: 'UP' },
-  { name: 'User Persona - Dir. Operaciones', file: 'User Personas/User Persona - Director Operaciones.md', category: 'UP' },
-  { name: 'User Persona - Líder TD', file: 'User Personas/User Persona - Líder Transformación Digital.md', category: 'UP' },
+  { name: 'User Persona - CEO', file: 'User Personas/User Persona - CEO.md', category: 'UP', slug: 'user-persona-ceo' },
+  { name: 'User Persona - CFO', file: 'User Personas/User Persona - CFO.md', category: 'UP', slug: 'user-persona-cfo' },
+  { name: 'User Persona - CTO', file: 'User Personas/User Persona - CTO.md', category: 'UP', slug: 'user-persona-cto' },
+  { name: 'User Persona - Dir. Operaciones', file: 'User Personas/User Persona - Director Operaciones.md', category: 'UP', slug: 'user-persona-operaciones' },
+  { name: 'User Persona - Líder TD', file: 'User Personas/User Persona - Líder Transformación Digital.md', category: 'UP', slug: 'user-persona-lider-td' },
 ]
 
 const getCategoryName = (cat: string) => {
@@ -78,18 +79,25 @@ const getCategoryName = (cat: string) => {
 }
 
 export default function Home() {
-  const [selectedFile, setSelectedFile] = useState<string | null>(null)
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  
   const [content, setContent] = useState<string>('')
   const [loading, setLoading] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [history, setHistory] = useState<string[]>([])
 
-  const currentFile = files.find(f => f.file === selectedFile)
+  const currentSlug = searchParams.get('doc') || 'indice'
+  
+  const currentFile = useMemo(() => {
+    return files.find(f => f.slug === currentSlug) || files[0]
+  }, [currentSlug])
 
   useEffect(() => {
-    if (selectedFile) {
+    if (currentFile.file) {
       setLoading(true)
-      fetch(`/api/markdown?file=${encodeURIComponent(selectedFile)}`)
+      fetch(`/api/markdown?file=${encodeURIComponent(currentFile.file)}`)
         .then((res) => res.text())
         .then((text) => {
           setContent(text)
@@ -100,36 +108,37 @@ export default function Home() {
           setLoading(false)
         })
     }
-  }, [selectedFile])
+  }, [currentFile.file])
 
-  const navigateTo = (file: string) => {
-    if (selectedFile) {
-      setHistory(prev => [...prev, selectedFile])
+  const navigateTo = (slug: string) => {
+    const file = files.find(f => f.slug === slug)
+    if (file) {
+      if (currentFile.file) {
+        setHistory(prev => [...prev, currentFile.slug])
+      }
+      router.push(`?doc=${slug}`)
     }
-    setSelectedFile(file)
   }
 
   const goBack = () => {
-    const prevFile = history[history.length - 1]
-    if (prevFile) {
+    if (history.length > 0) {
+      const prevSlug = history[history.length - 1]
       setHistory(prev => prev.slice(0, -1))
-      setSelectedFile(prevFile)
+      router.push(`?doc=${prevSlug}`)
     }
   }
 
   const goHome = () => {
     setHistory([])
-    setSelectedFile(INDEX_FILE)
+    router.push('?doc=indice')
   }
 
   const handleLinkClick = (href: string, e: React.MouseEvent) => {
     if (href.endsWith('.md')) {
       e.preventDefault()
-      try {
-        const decoded = decodeURIComponent(href)
-        navigateTo(decoded)
-      } catch {
-        navigateTo(href)
+      const file = files.find(f => f.file === href)
+      if (file) {
+        navigateTo(file.slug)
       }
     }
   }
@@ -165,7 +174,7 @@ export default function Home() {
             <button
               onClick={goHome}
               className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                selectedFile === INDEX_FILE
+                currentSlug === 'indice'
                   ? 'bg-blue-100 text-blue-700 font-medium'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
@@ -175,14 +184,14 @@ export default function Home() {
           </nav>
 
           <div className="mb-4">
-            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">MT - Marketing</h3>
+            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">MT - marketing</h3>
             <nav className="space-y-1">
               {mtFiles.map((item) => (
                 <button
-                  key={item.file}
-                  onClick={() => navigateTo(item.file)}
+                  key={item.slug}
+                  onClick={() => navigateTo(item.slug)}
                   className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                    selectedFile === item.file
+                    currentSlug === item.slug
                       ? 'bg-blue-100 text-blue-700 font-medium'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
@@ -198,10 +207,10 @@ export default function Home() {
             <nav className="space-y-1">
               {sbFiles.map((item) => (
                 <button
-                  key={item.file}
-                  onClick={() => navigateTo(item.file)}
+                  key={item.slug}
+                  onClick={() => navigateTo(item.slug)}
                   className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                    selectedFile === item.file
+                    currentSlug === item.slug
                       ? 'bg-blue-100 text-blue-700 font-medium'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
@@ -217,10 +226,10 @@ export default function Home() {
             <nav className="space-y-1">
               {vnFiles.map((item) => (
                 <button
-                  key={item.file}
-                  onClick={() => navigateTo(item.file)}
+                  key={item.slug}
+                  onClick={() => navigateTo(item.slug)}
                   className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                    selectedFile === item.file
+                    currentSlug === item.slug
                       ? 'bg-blue-100 text-blue-700 font-medium'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
@@ -236,10 +245,10 @@ export default function Home() {
             <nav className="space-y-1">
               {upFiles.map((item) => (
                 <button
-                  key={item.file}
-                  onClick={() => navigateTo(item.file)}
+                  key={item.slug}
+                  onClick={() => navigateTo(item.slug)}
                   className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
-                    selectedFile === item.file
+                    currentSlug === item.slug
                       ? 'bg-blue-100 text-blue-700 font-medium'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
@@ -269,7 +278,7 @@ export default function Home() {
                     >
                       Inicio
                     </button>
-                    {currentFile && currentFile.category !== 'Inicio' && (
+                    {currentFile.category !== 'Inicio' && (
                       <>
                         <span className="text-gray-400">/</span>
                         <span className="text-gray-500">{getCategoryName(currentFile.category)}</span>
@@ -277,7 +286,7 @@ export default function Home() {
                         <span className="text-gray-900 font-medium">{currentFile.name}</span>
                       </>
                     )}
-                    {currentFile && currentFile.category === 'Inicio' && (
+                    {currentFile.category === 'Inicio' && (
                       <>
                         <span className="text-gray-400">/</span>
                         <span className="text-gray-900 font-medium">Indice Maestro</span>
